@@ -7,4 +7,7 @@ let altura = prompt('qual é sua altura')
 let imc = (peso / (altura * altura))
 anoDeNascimento = 2024 - idade
 
-console.log (nome, sobrenome, ' tem ', idade, ' pesa ', peso, ' tem ', altura, ' de altura, seu IMC é de ', imc,' e nasceu em ', anoDeNascimento)
+var info = nome + " " + sobrenome + " tem " + idade + " anos, pesa " + peso + " kg, tem " + altura + " de altura, seu IMC é de " + imc.toFixed(2) + " e nasceu em " + anoDeNascimento + ".";
+
+console.log(info)
+document.getElementById('info').innerHTML = info
